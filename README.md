@@ -1,4 +1,4 @@
-##  HvA PC :: Assignment 3
+##  HvA PC :: Assignment 4
 This is a warm-up exercise for the subject of Distributed Objects
 
 ## Prerequisites
