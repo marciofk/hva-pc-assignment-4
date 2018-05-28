@@ -15,16 +15,16 @@ public class HelloWorldServer {
 
         try {
             // TODO 04: Create an instance of HelloWorld
-            HelloWorldService helloRemote = new HelloWorldServiceImpl();
+
 
             // TODO 05: Generate the stub of this implementation
-            HelloWorldService stub = (HelloWorldService) UnicastRemoteObject.exportObject(helloRemote,0);
+            // use the method UnicastRemoteObject.exportObject(<ref>,0) to generate the stub
 
             // TODO 06: Create the registry running on port 1099
-            Registry registry = LocateRegistry.createRegistry(1099);
+            // you can use the method createRegistry of LocateRegistry
 
             // TODO 07: Add the remote object into the registry
-            registry.bind("hello",stub);
+            // you can use the method bind of the registry object
 
         } catch (Exception e) {
             throw new RuntimeException(e);

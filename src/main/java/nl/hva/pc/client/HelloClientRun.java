@@ -14,13 +14,12 @@ public class HelloClientRun {
 
         try {
             // TODO 10: Get the running registry
-            Registry registry = LocateRegistry.getRegistry(1099);
+            // you can use the method getRegistry of the class LocateRegistry
 
             // TODO 11: Get the remote object's stub
-            HelloWorldService svc = (HelloWorldService) registry.lookup("hello");
+            // You can use the method lookup of the registry
 
             // TODO 12: Run the hello method
-            svc.sayHello("Hello HvA");
 
         } catch(Exception e) {
             throw new RuntimeException(e);
