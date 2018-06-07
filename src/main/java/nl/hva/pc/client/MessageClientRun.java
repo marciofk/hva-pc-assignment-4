@@ -1,14 +1,11 @@
 package nl.hva.pc.client;
 
-import nl.hva.pc.remote.HelloWorldService;
-
-import java.rmi.Naming;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
-
 // TODO 13: Run the client. Is it possible run it many times?
-// TODO 15: Run the client. Please explain the error and try to solve it, based on the error on the Stack Trace
-public class HelloClientRun {
+
+// TODO 15: Run the client.
+// Please explain the error and try to solve it, based on the error on the Stack Trace
+
+public class MessageClientRun {
 
     public static void main(String[] args) {
 
@@ -19,7 +16,8 @@ public class HelloClientRun {
             // TODO 11: Get the remote object's stub
             // You can use the method lookup of the registry
 
-            // TODO 12: Run the hello method
+            // TODO 12: execute the sendMessage method of the remote object
+            // get the generated ID for the message and print on the console
 
         } catch(Exception e) {
             throw new RuntimeException(e);
